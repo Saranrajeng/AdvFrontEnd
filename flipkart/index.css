@@ -93,24 +93,46 @@ input{
     color: black;
 }
 .moving>img{
-    width: 88vw;
+    width: 100vw;
     height: 40vh;
+    z-index: 1;
+   
 }
-#btn-1,#btn-2{
+#btn-2{
     height: 20vh;
-    width: 5vw;
+    width: 3vw;
     border: none;
-    background-color: #2874F0;
-    color: white;
-    border-radius: 0 25px 25px 0;
+    background-color: white;
+    color: #212121;
+    border-radius: 5px 5px 5px 5px;
+    font-size: larger;
+    position: absolute;
+    z-index: 8;
+    left: 97vw;
+    top: 10vh;
+}
+
+#btn-1{
+    height: 20vh;
+    width: 3vw;
+    border: none;
+    background-color: white;
+    color: #212121;
+    border-radius: 5px 5px 5px 5px;
+    font-size: larger;
+    z-index: 8;
+    left: 0vw;
+    top: 10vh;
+    position:absolute;
 }
 #btn-1:hover,#btn-2:hover{
-    background-color: blue;
+    background-color:#7d7d7d;
 
 }
 .moving{
     display: flex;
     align-items: center;
     justify-content:center ;
+    position: absolute;
 
 }

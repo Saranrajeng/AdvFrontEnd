@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 10vh;
+     position: fixed;
+   
+    top:0;
+    left: 0;
+    background-color: white;
+    
+}
+.nav-left{
+   background-color: white;
+   flex: 2.5;
+   padding: 20px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   
+   gap: 10px;
+   font-size: 30px;
+   padding-left: 10px;
+}
+.nav-center{
+    background-color:#f1f3f4;
+    flex:7.5;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+}
+.search-input{
+    border: none;
+    background-color: #f1f3f4;
+    width: 50vw;
+}
+.nav-right{
+ background-color: white;
+ flex: 2;   
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ gap: 20px;
+}
+.nav-last{
+    background-color: white;
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.dr-img{
+    height: 35px;
+    width: 35px;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    margin-left:20vw ;
+    margin-top: 20vh;
+
+
+}
+.left{
+flex: 1;
+background-color: white;
+height: 80vh;
+display: flex;
+flex-direction: column;
+padding-top: 3vh;
+top: 11vh;
+left: 0;
+position: fixed;
+
+
+
+
+}
+.btn1{
+  
+  border: none;
+  
+  align-items: center;
+  
+ border-radius: 0 20px 20px 0;
+  height: 8vh;
+  width: 100%;
+  background-color: white;
+  padding-left: 20px;
+
+text-align: left;
+
+display: flex;
+gap: 5vw;
+
+
+}
+.btn1:hover{
+    background-color: #f1f3f4;
+}
+.btn-new{
+    height: 10vh;
+    width: 10vw;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: white;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 2vh;
+}
+.btn-new:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.btn-buy{
+    color: #187dd3;
+    border: none;
+    height: 6vh;
+    width: 12vw;
+    margin-left: 8vh;
+   background-color: white;
+   border: 1px solid #f1f3f4;
+}
+.btn-buy:hover{
+    background-color: #f1f3f4;
+}
+.nav-mydrive{
+    width: 100%;
+    background-color: white;
+    height: 10vh;
+    gap: 5vw;
+    position: fixed;
+    top: 10vh;
+    padding-top: 10vh;
+}
+select{
+    border: none;
+    background-color: white;
+    font-size: larger;
+    height: 6vh;
+    width: 10vw;
+    border-radius: 10px;
+    margin-top: 1.3vh;
+    margin-right: 50vw;
+}
+select:hover{
+    background-color: #f1f3f4;
+}
+.center{
+flex: 4;
+background-color:white;
+
+}
+table{
+    height: 100%;
+    width: 100%;
+}

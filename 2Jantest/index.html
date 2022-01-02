@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="view" onclick="closeimg()">
+            <img style="opacity: 1;" id="viewimg"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/27-birds-jennifer-lommers.jpg" alt="">
+        </div>
+        
+        <div class="contents"><img id="img1" onclick="openimg(this.src)" src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/27-birds-jennifer-lommers.jpg"></div>
+        <div class="contents"><img id="img1" onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/3/deliberation-mario-sanchez-nevado.jpg" ></div>
+        <div class="contents"><imgo nclick="openimg(this.src)" id="img3"src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/space-for-reflection-chuck-pinson.jpg"></div>
+        <div class="contents"><img onclick="openimg(this.src)" id="img4"src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/the-pilot-eric-fan.jpg"></div>
+        <div class="contents"><img id="img5"onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/moose-nastasia-cook.jpg"></div>
+        <div class="contents"><img id="img6"onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/afternoon-aspen-grove-gary-kim.jpg"></div>
+        <div class="contents"><img id="img7"onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/atlas-david-palmer.jpg"></div>
+        <div class="contents"><img id="img8" onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/world-map-watercolor-michael-tompsett.jpg"></div>
+        <div class="contents"><img id="img9"onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/fallen-last-supper-bad-guys-ylli-haruni.jpg"></div>
+        <div class="contents"><img id="img10" onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/3/betrayal-mario-sanchez-nevado.jpg"></div>
+        <div class="contents"><img id="img11"onclick="openimg(this.src)" src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/little-deer-amy-hamilton.jpg"></div>
+        <div class="contents"><img id="img12"onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/one-of-the-boys-marion-rose.jpg"></div>
+        <div class="contents"><img id="img13" onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/two-bluebirds-jennifer-lommers.jpg"></div>
+        <div class="contents"><img id="img14"onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/the-governors-party-chuck-pinson.jpg"></div>
+        <div class="contents"><img id="img15"onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/the-princess-and-the-pea-christian-jackson.jpg"></div>
+        <div class="contents"><img id="img16"onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/rv-dusk-scott-listfield.jpg"></div>
+        <div class="contents"><img id="img17"onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/winston-churchill-at-sea-war-is-hell-store.jpg"></div>
+        <div class="contents"><img id="img18"onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/washington-crossing-the-delaware-war-is-hell-store.jpg"></div>
+        <div class="contents"><img id="img19"onclick="openimg(this.src)"src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/betsy-ross-and-general-george-washington-war-is-hell-store.jpg"></div>
+        <div class="contents"><img id="img20"onclick="openimg(this.src)" src="https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/the-way-it-used-to-be-chuck-pinson.jpg"></div>
+    </div>
+    <script>
+     var view = document.querySelector('.view');
+     var viewimg =document.getElementById("viewimg")
+      function openimg(src1){
+          view.style.display="flex";
+          viewimg.src=src1;
+      }
+
+       function closeimg(){
+        view.style.display="none";
+       }
+    </script>
+</body>
+</html>

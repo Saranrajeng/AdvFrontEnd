@@ -152,15 +152,7 @@ flex: 4;
 background-color:white;
 
 }
-table{
-    height: 100%;
-    width: 100%;
-}
-.table{
-    display: flex;
-    flex-direction: row;
-    gap: 1px;
-}
+
 .btn-toggle{
     border: none;
     background-color: white;
@@ -168,8 +160,39 @@ table{
 .btn-toggle:hover{
     background-color: #f1f3f4;
 }
-.table>img{
-    width: 275px;
-    height: 190px;
+.cells>img{
+    width: 200px;
+    height: 125px;
+    display: table-cell;
+    margin-bottom: 1vh;
+    /* border: 1px solid black;
+    padding: 1vh; */
 
+}
+.table{
+    
+  margin-top: 3vh;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    
+    
+    
+    
+}
+.cells{
+  /* display:table-row; */
+   justify-content: space-around; 
+  /* align-items: center;  */
+  display: flex;
+  flex-direction:column;
+  border: 1px solid black;
+  width: 20vw;
+  margin: 2vw;
+  padding: 1vh;
+ 
+  
+  
+  
 }

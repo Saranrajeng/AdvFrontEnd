@@ -100,25 +100,20 @@
                     </div>
 
                     <hr>
-                    <div class="table" id="table">
-                    <table>
-                      
-                        <tr>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTxfn7mm8r63g9Q0SuSsWujjiiZ3pyke-oEA&usqp=CAU" alt="">
-                        </tr>
-                        <tr>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxax3mq5tduVMYFUSBlXTDxoyNJ-jl717bDA&usqp=CAU" alt="">
-                        </tr>
-                        <tr>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnT6Cknvz5M4S83YXj7eyLe9vIxCjtLcTnbg&usqp=CAU" alt="">
-                        </tr>
-                        <tr>
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq6Yuby30qNQEGWka5th9SAELPLjJhN8cxlQ&usqp=CAU" alt="">
-                        </tr>
-                       
-
-        
-                    </table></div>
+                   <div class="table" id="tab">
+                       <div class="cells" id="cell1">
+                       <h1>HOUSE</h1><h3>Scene 1</h3> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTxfn7mm8r63g9Q0SuSsWujjiiZ3pyke-oEA&usqp=CAU" alt="">
+                       </div>
+                       <div class="cells" id="cell2">
+                       <H1>Road</H1> <h3>Scene 2</h3><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxax3mq5tduVMYFUSBlXTDxoyNJ-jl717bDA&usqp=CAU" alt="">
+                       </div>
+                       <div class="cells" id="cell3">
+                        <h1>Paint</h1><h3>Scene 3</h3><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnT6Cknvz5M4S83YXj7eyLe9vIxCjtLcTnbg&usqp=CAU" alt="">
+                       </div>
+                       <div class="cells" id="cell4">
+                        <h1>Art</h1><h3>Scene 4</h3><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq6Yuby30qNQEGWka5th9SAELPLjJhN8cxlQ&usqp=CAU" alt="">
+                       </div>
+                   </div>
 
 
                     </div>
@@ -129,15 +124,67 @@
     <script>
        
         function toggle(){
-            var elem = document.getElementById('table');
-           
-            if(elem.style.flexDirection=="row"){
-                elem.style.flexDirection="column";
-            }
-            else{
-                elem.style.flexDirection="row";
-            }
+         var table = document.getElementById('tab');
+         var cell1 = document.getElementById("cell1");
+         var cell2 = document.getElementById("cell2");
+         var cell3 = document.getElementById("cell3");
+         var cell4 = document.getElementById("cell4");
 
+         if( table.style.flexDirection=="column"){
+
+            
+
+
+
+        table.style.flexDirection="row";
+        cell1.style.width="auto";
+        cell2.style.width="auto";
+        cell3.style.width="auto";
+        cell4.style.width="auto";
+        cell1.style.flexDirection="column";
+        cell2.style.flexDirection="column";
+        cell3.style.flexDirection="column";
+        cell4.style.flexDirection="column";
+        cell1.style.alignItems="auto";
+        cell2.style.alignItems="auto";
+        cell3.style.alignItems="auto";
+        cell4.style.alignItems="auto";
+        cell1.style.border="1px solid black";
+        cell2.style.border="1px solid black";
+        cell3.style.border="1px solid black";
+        cell4.style.border="1px solid black";
+
+        table.style.border="none";
+         }
+       else{
+           
+           
+       
+        table.style.flexDirection="column";
+        cell1.style.width="100%";
+        cell2.style.width="100%";
+        cell3.style.width="100%";
+        cell4.style.width="100%";
+        cell1.style.flexDirection="row";
+        cell2.style.flexDirection="row";
+        cell3.style.flexDirection="row";
+        cell4.style.flexDirection="row";
+        cell1.style.alignItems="center";
+        cell2.style.alignItems="center";
+        cell3.style.alignItems="center";
+        cell4.style.alignItems="center";
+        cell1.style.border="none";
+        cell2.style.border="none";
+        cell3.style.border="none";
+        cell4.style.border="none";
+
+        table.style.border="1px solid black";
+       }
+
+
+      
+       
+          
            
         }
     </script>

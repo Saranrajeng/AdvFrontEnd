@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz</title>
+    <style>
+        .container{
+            margin: 100px auto;
+            /* text-align: center; */
+            box-shadow: 0 0 10px black;
+            width: 80vw;
+            padding: 10vh ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FizzBuzz Series</h1>
+        <input type="number" id="input"><br>
+        <button onclick="generate()">Generate</button><br>
+        <ul id="ul"></ul>
+    </div>
+    
+    <script>
+
+      function fizzbuzz(a){
+        var ul = document.getElementById("ul");
+        
+
+        for(var i=1;i<=a;i++){
+            if(i%3==0){
+                if(i%5==0){
+                    var li = document.createElement('li');
+                    li.innerText="FizzBuzz";
+                    ul.appendChild(li);
+                }
+                else{
+                    var li = document.createElement('li');
+                    li.innerText="Fizz";
+                    ul.appendChild(li);
+                }
+            }
+            else {
+                if(i%5==0){
+                    var li = document.createElement('li');
+                    li.innerText="Buzz";
+                    ul.appendChild(li);
+                }
+                else{
+                    var li = document.createElement('li');
+                    li.innerText= i;
+                    ul.appendChild(li);
+                }
+            }
+        }
+    }
+        function generate(){
+            var input =document.getElementById("input").value;
+           
+            fizzbuzz(input);
+
+        }
+    </script>
+</body>
+</html>

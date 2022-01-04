@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>screenlock</title>
+    <style>
+        *{padding: 0;
+        margin: 0;}
+        body{
+            background-color: #7d7d7d;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            
+            background-color:rgba(255,255,255,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            display: none;
+            width: 50vw;
+            height: auto ;
+            padding: 10vh;
+            border-radius: 50px;
+            
+        }
+          .btn{
+            color: black;
+            width: 5vw;
+        } 
+        button:hover{
+            background-color: blue;
+        }
+         
+        .para{
+            display: none;
+        }
+        .key-contain{
+            width: 50vw;
+            height: 50vh;
+            text-align: center;
+            justify-content: center;
+            padding-top: 10vh;
+            background-color: white;
+            margin-bottom: 5vh;
+            border-radius: 50px;
+        }
+        #key{
+            width: 40vw;
+            height: 10vh;
+            margin-bottom: 3vh;
+        }
+        .p{
+            height: 100vh;
+        }
+        #input{
+            width: 20vh;
+            height: 20vh;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="key-contain" id="keycontainer">
+        <h1>Enter the  4 number Key to set lock!</h1>
+        <input placeholder="Enter the Key here to set" type="text" id="key" maxlength="4" minlength="4" pattern="0,1,2,3,4,5,6,7,8,9"><br>
+        <button onclick="submit()">submit</button>
+    </div>
+    <div  class="container">
+        <h1>Enter the correct Key!</h1>
+        <input id="input" placeholder="Enter the key here!"type="password" maxlength="4" minlength="4" pattern="0,1,2,3,4,5,6,7,8,9" >
+        <div class="buttons">
+            <button class="btn" onclick="number('1')">1</button>
+            <button class="btn"  onclick="number('2')">2</button>
+            <button class="btn" onclick="number('3')" >3</button><br>
+            <button class="btn" onclick="number('4')">4</button>
+            <button class="btn" onclick="number('5')">5</button>
+            <button class="btn" onclick="number('6')">6</button><br>
+            <button class="btn" onclick="number('7')">7</button>
+            <button class="btn" onclick="number('8')">8</button>
+            <button class="btn" onclick="number('9')">9</button><br>
+            <button class="btn" onclick="number('*')">*</button>
+            <button class="btn" onclick="number('0')">0</button>
+            <button class="btn" onclick="number('#')">#</button><br>
+            <button class="btn" onclick="unlock()">unlock</button>
+        </div>
+    </div>
+    <div class="para">
+        <h1>Screen unlocked! Now you can edit the text</h1>
+        <p contenteditable="true">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta doloremque, sit aliquam quod unde laboriosam itaque ducimus in asperiores distinctio quasi dolorem recusandae laborum sunt numquam quidem est libero? Rem deleniti dolores impedit accusamus similique nemo libero illo expedita enim facere adipisci, perspiciatis debitis, iusto est magni maiores quae voluptate atque minus. Libero saepe pariatur perferendis recusandae, commodi sint accusantium laboriosam hic vero temporibus nihil aperiam expedita a officia animi earum autem exercitationem repudiandae magnam praesentium veniam eius cum quod minus. Aperiam, quam mollitia. Consectetur rerum similique odio labore modi! Illum suscipit illo quas repellendus molestiae odit asperiores natus dolor.</p>
+    </div>
+    <script>
+        var input =document.getElementById("input");
+        var container = document.querySelector('.container');
+        var keycontainer = document.getElementById("keycontainer");
+        var key = document.getElementById("key");
+        var para =document.querySelector(".para");
+        function submit(){
+            
+            container.style.display="flex";
+            keycontainer.style.height="30vh";
+            keycontainer.style.paddingTop="3vh";
+            
+           
+
+        }
+        function number(a){
+            input.value=input.value+a;
+            
+        }
+        function unlock(){
+            if (input.value === key.value)
+             {
+                container.style.display= "none";
+                para.style.display="contents";
+                  keycontainer.style.display="none";
+
+             }
+             else{
+                 alert("Enter the correct Key!")
+             }
+             
+            
+        }
+    </script>
+    
+</body>
+</html>

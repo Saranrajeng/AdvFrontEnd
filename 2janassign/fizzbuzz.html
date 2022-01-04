@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz</title>
+    <style>
+        body{
+            background-color: #7f7f7f;
+        }
+        .container{
+            margin: 100px auto;
+            box-shadow: 0 0 10px black;
+            width: 70vw;
+            text-align: center;
+            height: 50vh;
+            padding: 10vh;
+            background-color: white;
+           
+        }
+        button{
+            margin-top: 5vh;
+            box-shadow: 0 0 10px black;
+        }
+        input{
+            box-shadow: 0 0 10px black;
+            border: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FizzBuzz</h1>
+        <input type="number" name="" id="input"><br>
+        <button id="btn" onclick="calculate()">calculate</button><br>
+        <p id="p"></p>
+    </div>
+    <script>
+         function fizzbuzz(a){           
+            if(a %3==0 &&  a%5==0){
+                return "FizzBuzz"
+            }
+            else if(a%3==0)
+            {
+                return "Fizz"
+            }
+            else if(a%5==0)
+            {
+                return "Buzz"
+            }
+       
+                return "It is not a FizzBuzz"
+            
+        }
+        function calculate(){
+            var input = document.getElementById("input");
+            var p = document.getElementById("p");
+       
+        p.innerText=fizzbuzz(input.value);
+    }
+
+    </script>
+</body>
+</html>

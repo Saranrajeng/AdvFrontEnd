@@ -77,7 +77,7 @@ function  submit(){
         password.style.border="2px solid green";
         count+=1;
     }
-    if (password2==""){
+    if (password2.value==""){
         password2error.style.visibility="visible";
         password2error.textContent="Password does not empty";
         password2error.style.color="red";

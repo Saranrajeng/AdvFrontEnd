@@ -25,4 +25,4 @@ Array.prototype.checkPrime = function() {
   };
   console.log([2,4,10,15].checkPrime());
   console.log([1,3,5].checkPrime());
-  console.log([1,3,5,7,11,4,13,17,2].checkPrime());
+  console.log([1,3,5,7,11,13,17,2].checkPrime());

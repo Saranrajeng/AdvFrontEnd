@@ -30,7 +30,7 @@ form{
 .form-control label{
     display: inline-block;
     margin-bottom: 5px;
-    margin-left: 0px;
+    
 }
 .form-control input{
     border: 2px solid #d8e8ea;

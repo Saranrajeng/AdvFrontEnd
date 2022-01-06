@@ -77,7 +77,13 @@ function  submit(){
         password.style.border="2px solid green";
         count+=1;
     }
-    if(password.value==password2.value){
+    if (password2==""){
+        password2error.style.visibility="visible";
+        password2error.textContent="Password does not empty";
+        password2error.style.color="red";
+        password2.style.border="2px solid red";
+    }
+    else if(password.value==password2.value){
         password2.style.border="2px solid green";
         count+=1;
     }
@@ -101,4 +107,3 @@ function  submit(){
 
  }
 
- 

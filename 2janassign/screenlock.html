@@ -65,13 +65,26 @@
             color: white;
             font-size: larger;
         }
+        #btn{
+            width: 80%;
+            height: 10vh;
+            font-size: larger;
+            border-radius: 20px;
+            background-color: aqua;
+            border: none;
+            color:grey;
+        }
+        #btn:hover{
+            background-color: #077Acc;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="key-contain" id="keycontainer">
         <h1>Enter the  4 number Key to set lock!</h1>
         <input placeholder="Enter the Key here to set" type="text" id="key" maxlength="4" minlength="4" pattern="0,1,2,3,4,5,6,7,8,9"><br>
-        <button onclick="submit()">submit</button>
+        <button id="btn"onclick="submit()">submit</button>
     </div>
     <div  class="container">
         <h1>Enter the correct Key!</h1>
@@ -102,12 +115,20 @@
         var keycontainer = document.getElementById("keycontainer");
         var key = document.getElementById("key");
         var para =document.querySelector(".para");
+        var btn=document.getElementById("btn");
         function submit(){
-            
+
+            if(key.value==""){
+                alert("Key doesn't empty");
+            }
+            else{
             container.style.display="flex";
             keycontainer.style.height="30vh";
             keycontainer.style.paddingTop="3vh";
-            
+            btn.style.height="6vh";
+            btn.style.fontSize="20px";
+
+            }
            
 
         }

@@ -1,0 +1,82 @@
+*{ padding: 0;
+    margin: 0;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8vh;
+    padding: 5vh;
+    z-index: 7;
+    position: relative;
+    background-color: rgba(0,0,0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    color: aliceblue;
+}
+.container>input{
+    opacity: 0.5;
+    border-radius: 5px;
+    border: none;
+    width: 50%;
+    height: 7vh;
+    text-align: center;
+}
+.container>button{
+    border-radius: 5px;
+    border: none;
+    width: 50%;
+    height: 7vh;
+    text-align: center;
+    background-color: #6c4454;
+    opacity: 0.5;
+    color: white;
+
+
+}
+.container>button:hover{
+ background-color: white;
+ color: red;
+}
+
+.container-btn{
+    display: flex;
+    
+    
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    z-index: 4;
+}
+.container-btn>img{
+    width: 100%;
+    height: 100%;
+}
+.video-div{
+    display: none;
+    flex-wrap: wrap;
+    height:100vh ;
+    width: 100vw;
+    flex-direction: row;
+    background-image: url(https://saranrajeng.github.io/AdvFrontEnd/bow/IMG_20210301_205552_590.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: antiquewhite;
+    padding: 50px;
+}
+.i,.love,.you{
+    font-size: 200px;
+    color: red;
+    display: none;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

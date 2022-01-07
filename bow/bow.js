@@ -56,7 +56,7 @@ function youv(){
 
 function ok1(){
     var input = document.getElementById("input").value;
-    if(input=="Baby"||input=="baby"||input=="bae"||input=="gundu"||input=="Gundu"){
+    if(input=="Baby"||input=="baby"||input=="bae"||input=="gundu"||input=="Gundu"||input=="pavi"||input=="Pavi"||input=="Bow"||input||"bow"){
         container.style.display="none";
         containerbtn.style.display="none";
         videodiv.style.display="flex";

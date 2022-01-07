@@ -1,0 +1,4 @@
+If you say window.location.reload(true) the browser will skip the cache and reload the page from the server.
+ window.location.reload(false) will do the opposite.
+
+Note: default value for window.location.reload() is false

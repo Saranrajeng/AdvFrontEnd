@@ -37,6 +37,7 @@ function  submit(){
      }
      else{
         username.style.border="2px solid green ";
+        usernameerror.style.visibility="hidden";
         count+=1;
 
      }
@@ -47,16 +48,17 @@ function  submit(){
          email.style.border="2px solid red";
 
      }
-     else if( ! email.value.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)){
+     else if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)){
+       
+        email.style.border="2px solid green ";
+        emailerror.style.visibility="hidden";
+        count+=1;
+     }
+    else{
         emailerror.textContent="Email not valid";
         emailerror.style.visibility="visible";
         emailerror.style.color="red";
         email.style.border="2px solid red";
-     }
-    else{
-        email.style.border="2px solid green ";
-        count+=1;
-        
     }
     if(password.value==""){
         passworderror.style.visibility="visible";
@@ -75,6 +77,7 @@ function  submit(){
     }
     else{
         password.style.border="2px solid green";
+        passworderror.style.visibility="hidden";
         count+=1;
     }
     if (password2.value==""){
@@ -85,6 +88,7 @@ function  submit(){
     }
     else if(password.value==password2.value){
         password2.style.border="2px solid green";
+        password2error.style.visibility="hidden";
         count+=1;
     }
     else{
@@ -94,7 +98,7 @@ function  submit(){
        password2.style.border="2px solid red";
     }
   if(count==4){
-      alert("executing");
+      
       console.log(username.value);
       console.log(email.value);
       console.log(password.value);

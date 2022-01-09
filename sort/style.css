@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(14, 44, 37);
+    color: white;
+}
+#container{
+   margin: auto;
+}
+#Mychart{
+    height: 40vh;
+    width: 80vw;
+
+}
+input{
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid aqua;
+   
+}
+.contain{
+    text-align: center;
+}
+input:hover{
+    background-color: aqua;
+    color: brown;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h1><center>Sorting Visualization</center></h1><br>
+    <div class="contain"><input type="button" value="Show Bar" onclick="showbar()">
+        <input type="button" value="Show polar" onclick="showpolar()">
+        <input type="button" value="Show doughnut" onclick="showdoughnut()">
+        <input type="button" value="Show line" onclick="showline()"><br>
+        <input type="button" value="Sort Array" onclick="sortarray()">
+        <input type="button" value="Regenerate Array" onclick="resetarray()"></div>
+    
+    <canvas id="Mychart" ></canvas>
+    <script>
+        var ctx=document.getElementById("Mychart").getContext('2d');
+        var Mychart= new Chart(ctx,{
+            type:'bar',
+            data:{
+                labels:['Element 1','Element 2','Element 3','Element4','Element 5','Element 6','Element 7','Element 8','Element 9','Element 10',
+                'Element 11','Element 12','Element 13','Element 14','Element 15','Element 16','Element 17','Element 18','Element 19','Element 20',
+                'Element 21','Element 22','Element 23','Element 24','Element 25','Element 26','Element 27','Element 28','Element 29','Element 30',
+                'Element 31','Element 32','Element 33','Element 34','Element 35','Element 36','Element 37','Element 38','Element 39','Element 40'],
+                datasets:[{
+                     data: array,
+                     backgroundColor:"rgba(0,255,255,0.8)",
+                     borderWidth:2
+
+                }]
+
+            },
+            options:{
+                legend:{
+                    display:false
+                }
+            }
+        });
+        function sortarray() {
+            Mychart.data.datasets[0].data=sortedaray;
+            Mychart.update();
+        }
+        function resetarray(){
+            generateArray();
+            bubblesort(array);
+            Mychart.data.datasets[0].data=array;
+            Mychart.update();
+
+        }
+        function showbar(){
+            Mychart.destroy();
+            
+           Mychart= new Chart(ctx,{
+            type:'bar',
+            data:{
+                labels:['Element 1','Element 2','Element 3','Element4','Element 5','Element 6','Element 7','Element 8','Element 9','Element 10',
+                'Element 11','Element 12','Element 13','Element 14','Element 15','Element 16','Element 17','Element 18','Element 19','Element 20',
+                'Element 21','Element 22','Element 23','Element 24','Element 25','Element 26','Element 27','Element 28','Element 29','Element 30',
+                'Element 31','Element 32','Element 33','Element 34','Element 35','Element 36','Element 37','Element 38','Element 39','Element 40'],
+                datasets:[{
+                     data: array,
+                     backgroundColor:"rgba(0,255,255,0.8)",
+                     borderWidth:2
+
+                }]
+
+            },
+            options:{
+                legend:{
+                    display:false
+                }
+            }
+        });
+        }
+        function showpolar(){
+            Mychart.destroy();
+           
+         Mychart= new Chart(ctx,{
+            type:'polarArea',
+            data:{
+                labels:['Element 1','Element 2','Element 3','Element4','Element 5','Element 6','Element 7','Element 8','Element 9','Element 10',
+                'Element 11','Element 12','Element 13','Element 14','Element 15','Element 16','Element 17','Element 18','Element 19','Element 20',
+                'Element 21','Element 22','Element 23','Element 24','Element 25','Element 26','Element 27','Element 28','Element 29','Element 30',
+                'Element 31','Element 32','Element 33','Element 34','Element 35','Element 36','Element 37','Element 38','Element 39','Element 40'],
+                datasets:[{
+                     data: array,
+                     backgroundColor:"rgba(0,255,255,0.8)",
+                     borderWidth:2
+
+                }]
+
+            },
+            options:{
+                legend:{
+                    display:false
+                }
+            }
+        });
+
+        }
+        function showdoughnut(){
+            Mychart.destroy();
+     Mychart= new Chart(ctx,{
+        type:'doughnut',
+        data:{
+            labels:['Element 1','Element 2','Element 3','Element4','Element 5','Element 6','Element 7','Element 8','Element 9','Element 10',
+            'Element 11','Element 12','Element 13','Element 14','Element 15','Element 16','Element 17','Element 18','Element 19','Element 20',
+            'Element 21','Element 22','Element 23','Element 24','Element 25','Element 26','Element 27','Element 28','Element 29','Element 30',
+            'Element 31','Element 32','Element 33','Element 34','Element 35','Element 36','Element 37','Element 38','Element 39','Element 40'],
+            datasets:[{
+                 data: array,
+                 backgroundColor:"rgba(0,255,255,0.8)",
+                 borderWidth:2
+
+            }]
+
+        },
+        options:{
+            legend:{
+                display:false
+            }
+        }
+    });
+}
+function showline(){
+            Mychart.destroy();
+     Mychart= new Chart(ctx,{
+        type:'line',
+        data:{
+            labels:['Element 1','Element 2','Element 3','Element4','Element 5','Element 6','Element 7','Element 8','Element 9','Element 10',
+            'Element 11','Element 12','Element 13','Element 14','Element 15','Element 16','Element 17','Element 18','Element 19','Element 20',
+            'Element 21','Element 22','Element 23','Element 24','Element 25','Element 26','Element 27','Element 28','Element 29','Element 30',
+            'Element 31','Element 32','Element 33','Element 34','Element 35','Element 36','Element 37','Element 38','Element 39','Element 40'],
+            datasets:[{
+                 data: array,
+                 backgroundColor:"rgba(0,255,255,0.8)",
+                 borderWidth:2
+
+            }]
+
+        },
+        options:{
+            legend:{
+                display:false
+            }
+        }
+    });
+}
+    
+    </script>
+    
+</body>
+</html>

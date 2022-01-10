@@ -36,6 +36,7 @@ function start(){
       clearInterval(countUp);
       timeSecond=0;
       timeH.innerHTML='00:00:00';
+      btn.innerText="Start"
   }
   function lap(){
       var list =document.getElementById("list");

@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    box-shadow: 0 0 10px black;
+    width: 80vw;
+    background-color: rgba(184, 151, 151, 0.432);
+   
+    margin: 100px auto;
+    text-align: center;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+body{
+    background-color: aqua;
+}
+button{
+    padding: 10px;
+    width: 15vw;
+    background-color: aliceblue;
+    border:none;
+    
+
+}
+button:hover{
+    background-color: aqua;
+}
+.li{
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 10vw;
+    
+}

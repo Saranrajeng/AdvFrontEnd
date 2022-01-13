@@ -1,0 +1,47 @@
+[
+    {
+        "q":"Which one is the Smallest Ocean in the World?",
+       "options" :[{"optionA":"Indian"},
+        {"optionB":"Pacific"},
+        {"optionC":"Atlantic"},
+        {"optionD":"Artic"}],
+        "Ans":"Artic"
+    },
+    {
+        "q":"Which country is also known as the 'Land of Rising Sun'?",
+       "options": [{"optionA":"Japan"},
+        {"optionB":"Newzealand"},
+        {"optionC":"Fiji"},
+        {"optionD":"China"}],
+        "Ans":"Japan"
+    },
+    {
+        "q":"Which continent as the highest number of countries?",
+       "options":[ { "optionA":"Asia"},
+        {"optionB":"Europe"},
+        {"optionC":"North America"},
+        {"optionD":"Africa"}],
+        "Ans":"Africa"
+    },
+    {
+        "q":"In which country, White Elephant is found?",
+        "options":[{"optionA":"India"},
+        {"optionB":"Srilanka"},
+        {"optionC":"Thailand"},
+        {"optionD":"Malaysia"}],
+        "Ans":"Thailand"
+    },
+    {
+        "q":"Total number of Oceans in the World?",
+        "options":[{"optionA":"3"},
+        {"optionB":"5"},
+        {"optionC":"7"},
+        {"optionD":"12"}],
+        "Ans":"5"
+    },
+    {
+        "q":"The country that has the highest in Barley Production?",
+        "options":[{"optionA":"China"},{"optionB":"India"},{"optionC":"Russia"},{"optionD":"France"}],
+        "Ans":"Russia"
+    }
+]

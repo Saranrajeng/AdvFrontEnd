@@ -9,16 +9,11 @@ var progress=document.querySelector(".progress");
 var Ans;
 var time=30;
 var interval,interval1;
-
-
-
 var result= document.querySelector(".result");
 var resulth2=document.getElementById("result-h2");
 let i=0;
-
 var options=[optionA,optionB,optionC,optionD];
 var data;
-
 var prize =0;
 var width=0;
 
@@ -31,20 +26,19 @@ fetch('script.json')
        
         addevent(options);
         interval=setInterval(()=>{
-         
-           time=time-1;
-           getquestion(data,i);
-          
-        },1000);
+         time=time-1;
+         getquestion(data,i);
+         },1000);
+
         interval1=setInterval(()=>{
            if(width==2000){
-            clearInterval(interval1);
+              clearInterval(interval1);
            }
-       else{  width=width+1;
-         progress.style.width=width+"px";}
+           else{
+                width=width+1;
+               progress.style.width=width+"px";
+              }
         },28.5);
-        
-        
 });
 
 
@@ -63,12 +57,10 @@ function getquestion(data,i){
        result.style.display="flex";
        progress.style.backgroundColor="#ff165d";
        progress.style.width="81vw"
-      
-
-  }
+      }
   else{
-   timeh.innerText=time;
-  }
+        timeh.innerText=time;
+      }
   }
 
 function addevent(a){

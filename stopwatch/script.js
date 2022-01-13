@@ -1,4 +1,6 @@
 var timeH = document.querySelector("h1");
+var list =document.getElementById("list");
+
 let timeSecond = 0;
         
 var mini=0;
@@ -36,11 +38,12 @@ function start(){
       clearInterval(countUp);
       timeSecond=0;
       timeH.innerHTML='00:00:00';
-      btn.innerText="Start"
+      btn.innerText="Start";
+      list.innerHTML="";
+      
   }
   function lap(){
-      var list =document.getElementById("list");
-      var li =document.createElement("li");
+    var li =document.createElement("li");
       li.innerHTML=timeH.innerHTML;
       list.appendChild(li);
   }

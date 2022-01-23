@@ -4,7 +4,7 @@ var input = document.getElementById("input");
 var search= document.querySelector(".search");
 table.style.display="none";
 function fetching(a){
-    fetch(`http://universities.hipolabs.com/search?country=${a}`)
+    fetch(`https://universities.hipolabs.com/search?country=${a}`)
     .then(Response=>{ return Response.json()
     })
     .then(data=>{

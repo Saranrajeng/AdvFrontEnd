@@ -1,0 +1,129 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.top{
+    display: flex;
+    width: 90vw;
+    
+}
+.top-left{
+flex: 9;
+display: flex;
+flex-direction: column;
+gap: 10px;
+justify-content: flex-start;
+
+}
+.top-right{
+  flex: 1;
+}
+.top-left>strong, .top-left>h1{
+    color: #1f4e79;
+}
+img{
+    height: 150px;
+    width: 110px;
+    box-shadow: 0 0 10px black;
+}
+.container{
+    padding: 20px;
+}
+.center>h1,.center>h2{
+    color: #1f4e79;
+    background-color: #bdd6ee;
+    border:  1px solid #2e74b4;
+    width: 90vw;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   padding-left: 5PX;
+}
+.center{
+    width:80vw;
+}
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+}
+th{
+    color: #1f4e79;
+}
+#table,#td{
+    border: none;
+    border-collapse: none;
+}
+.tec{
+    padding-left: 30px;
+   
+}
+.tec>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: larger;
+    
+}
+.per>span{
+    color:#1f4e79;
+    display: flex;
+    
+    
+}
+.pers{
+    display: inline;
+    justify-content: flex-start;
+    color: black;
+
+}
+.perso{
+    width: 20vw;
+}
+.per{
+    padding-left: 30px;
+}
+footer{
+    padding-top: 1vh;
+    background-color:#bdd6ee;
+    height:9vh;
+    width: 98.7vw;
+    border-top: 1px solid #2e74b4;
+    display: flex ;
+    justify-content:center;
+    gap: 4vw;
+}
+.obj{
+    font-size: larger;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa {
+    
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    height: 40px;
+    padding-top:3px ;
+    
+    
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-github{
+      background-color: black;
+      color: white;
+  }

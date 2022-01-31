@@ -5,6 +5,10 @@
 .top{
     display: flex;
     width: 90vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
     
 }
 .top-left{
@@ -33,10 +37,11 @@ img{
     color: #1f4e79;
     background-color: #bdd6ee;
     border:  1px solid #2e74b4;
-    width: 90vw;
+    width: 89vw;
    margin-top: 20px;
    margin-bottom: 10px;
    padding-left: 5PX;
+  
 }
 .center{
     width:80vw;

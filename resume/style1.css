@@ -1,0 +1,17 @@
+body{
+  opacity: 0.5;
+    background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.container{
+    background-color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius:20px;
+    width: 50vw;
+    margin: 100px auto;
+    padding-bottom: 20px;
+    opacity: 1;
+}
